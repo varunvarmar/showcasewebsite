@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+body{
+    height: 500vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+.new_page{
+    height: 100vh;
+  
+}
+p{
+    font-family: 'Rubik', sans-serif;  
+}
+nav{
+    font-family: 'Alfa Slab One', cursive;
+    background-image: linear-gradient(to right, #d1d9e4, #fafaf6);
+}
+.title{
+    color: #000000;
+}
+.gap{
+    padding-left: 40%;
+}
+
+.img_txt{
+    position: absolute;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.abc{
+    top: 10%;
+    left: 10%;
+    text-align: left;
+}
+.main{
+    color: black;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.def{
+    top: 10%;
+    right: 10%;
+    text-align: right;
+}
+.page_1{
+    height: 100vh;
+}
+.jumbotron{
+    padding: 20px;
+    background-image: url('ipads/img_005.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.new{
+    position: relative;
+    top: 0;
+    left: 50%;
+}
+.dot{
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.g{
+    background-color: #9b9fa2;
+}
+.s{
+    background-color: #D4BFA7;
+}
+.p{
+    background-color: #45464B;
+}
+.bg_001{
+    height: 100vh;
+
+}
+.rock{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* box css */
+.bg_002{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(to right,#ffffff,#f5f5f5,#ffffff);
+    
+}
+.center{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.box{
+    position: relative;
+    width: 500px;
+    height: 300px;
+    transform: perspective(500px) rotate(-40deg) skew(25deg);
+    box-shadow: -90px 75px 20px rgba(0, 0, 0, .3);
+    background: #fff url(ipad/img1.png);
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: 0.5s;
+}
+
+.box:hover{
+    transform: perspective(500px) rotate(-40deg) skew(25deg) translate(50px,-50px);
+    box-shadow: -150px 115px 100px rgba(0, 0, 0, .3);
+    
+}
+
+.box::before{
+    content: '';
+    width: 90px;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transform: skewY(-40deg) translate(-90px,-38px);
+    background: #e8e7ec url(ipad/apple.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.box::after{
+    content: '';
+    width: 100%;
+    height: 77px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    transform: skewX(-50deg) translate(45px,76px);
+    background: #e8e7ec url(ipad/logo.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+/* main css */
+.img_slide_1{
+    transition: 1s;
+    transform: translateX(250%);
+}
+.bg_003{
+    height: 50vh;
+    background-image: url('ipads/img_007.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.footer{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #34495e;
+    color: #dfe4ea;
+    text-align: center;
+}
+.col-foot{
+    text-align: left;
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+li{
+    padding-left: 0px;
+    padding-top: 10px;    
+}
+
+
+@media (max-width: 576px) { 
+
+    .footer{
+        height: 22%;
+    }
+
+}
